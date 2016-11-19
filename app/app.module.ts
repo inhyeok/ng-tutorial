@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent }  from './app.component';
+import { Home } from './home';
 import { Nav } from './nav';
 
 import { routes } from './app.routes';
@@ -12,12 +13,11 @@ import { routes } from './app.routes';
   imports:      [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes, {
-      useHash: true
-    })
+    RouterModule.forRoot(routes)
   ],
   declarations: [
     AppComponent,
+    Home,
     Nav
    ],
   bootstrap:    [ AppComponent ]

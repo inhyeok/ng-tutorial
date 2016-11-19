@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'main-nav',
+  selector: 'nav',
   template: `<h1>Nav</h1>`
 })
 
