@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent }  from './app.component';
 import { Home } from './home';
+import { HomeDog } from './home_dog';
 import { Nav } from './nav';
 
 import { routes } from './app.routes';
@@ -18,6 +19,7 @@ import { routes } from './app.routes';
   declarations: [
     AppComponent,
     Home,
+    HomeDog,
     Nav
    ],
   bootstrap:    [ AppComponent ]
