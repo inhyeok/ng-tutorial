@@ -2,7 +2,9 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'nav',
-  template: `<h1>Nav</h1>`
+  template: `
+    <a routerLink="/home" routerLinkActive="active">Home으로 갑시다.</a>
+  `
 })
 
 export class Nav { }

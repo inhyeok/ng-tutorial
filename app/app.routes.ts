@@ -18,6 +18,5 @@ export const routes: Routes = [
         component: HomeDog
       }
     ]
-  },
-  { path: "nav", component: Nav}
+  }
 ];

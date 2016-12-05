@@ -4,8 +4,7 @@ import { Component } from '@angular/core';
   selector: 'my-app',
   template: `
     <h1>Hello {{name}}</h1>
-    <a routerLink="/home" routerLinkActive="active">Home으로 갑시다.</a>
-    <a routerLink="/nav" routerLinkActive="active">Nav로 갑시다.</a>
+    <nav></nav>
     <router-outlet></router-outlet>
   `
 })
