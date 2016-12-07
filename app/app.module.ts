@@ -2,6 +2,7 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { HttpModule, JsonpModule } from '@angular/http';
 
 import { AppComponent }  from './app.component';
 import { Home } from './home';
@@ -14,7 +15,9 @@ import { routes } from './app.routes';
   imports:      [
     BrowserModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    HttpModule,
+    JsonpModule
   ],
   declarations: [
     AppComponent,
