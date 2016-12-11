@@ -3,7 +3,7 @@ import { Http, Headers, Response } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
 
 @Injectable()
-class githubApi {
+export class githubApi {
   constructor(private http: Http) { }
   get_branch() {
     return this.http
