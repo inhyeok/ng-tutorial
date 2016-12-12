@@ -8,6 +8,7 @@ import { AppComponent }  from './app.component';
 import { Home } from './home';
 import { HomeDog } from './home_dog';
 import { Nav } from './nav';
+import { Chat } from './chat';
 
 import { routes } from './app.routes';
 
@@ -23,7 +24,8 @@ import { routes } from './app.routes';
     AppComponent,
     Home,
     HomeDog,
-    Nav
+    Nav,
+    Chat
    ],
   bootstrap:    [ AppComponent ]
 })
