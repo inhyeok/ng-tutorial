@@ -6,14 +6,15 @@ export class ChatService {
   private url = 'http://localhost:3000';
   private socket;
 
-  sendMessage(message){
-    this.socket.emit('add-message', message);
+  sendMessage(message:string) {
+    console.log('chat service sendMessage');
+    this.socket.emit('sendMessage', message);
   }
 
   getMessages() {
     let observable = new Observable(observer => {
       this.socket = io(this.url);
-      this.socket.on('message', (data) => {
+      this.socket.on('addMessage', (data) => {
         observer.next(data);
       });
       return () => {

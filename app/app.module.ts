@@ -4,16 +4,16 @@ import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
 
-import { AppComponent }  from './app.component';
-import { Home } from './home';
-import { HomeDog } from './home_dog';
-import { Nav } from './nav';
-import { Chat } from './chat';
+import { AppComponent }  from './components/app';
+import { HomeComponent } from './components/home';
+import { GithubBranchComponent } from './components/github_branch';
+import { NavComponent } from './components/nav';
+import { ChatComponent } from './components/chat';
 
 import { routes } from './app.routes';
 
 @NgModule({
-  imports:      [
+  imports: [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(routes),
@@ -22,11 +22,11 @@ import { routes } from './app.routes';
   ],
   declarations: [
     AppComponent,
-    Home,
-    HomeDog,
-    Nav,
-    Chat
+    HomeComponent,
+    GithubBranchComponent,
+    NavComponent,
+    ChatComponent
    ],
-  bootstrap:    [ AppComponent ]
+  bootstrap: [ AppComponent ]
 })
 export class AppModule { }
